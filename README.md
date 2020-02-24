@@ -3678,6 +3678,105 @@ JSON转领域对象工具：GsonFormat
 可执行SQL:Mybatis Log Plugin
 ```
 
+----
+
+### 1. Mybatis工具：Free Mybatis plugin
+
+   通过dao找mapper，通过mapper找dao
+   ![image-20200223222313649](picture/image-20200223222313649.png)
+
+### 2. Maven辅助神器：Maven Helper
+   解决jar冲突的情况
+
+   ![image-20200223222538648](picture/image-20200223222538648.png)
+
+   ![image-20200223222933537](picture/image-20200223222933537.png)
+
+### 3. 单元测试生成工具：JunitGenerator V2.0
+作用：自动生成测试类
+   **Idea单元测试Junit Generator设置**
+   ![image-20200224105822548](picture/image-20200224105822548.png)
+
+   ```
+   0. setting--->plugins--->brose repostories-->输入JUnitGenerator V2.0
+   
+   1.junit generator自动生成测试代码缺省和java类在同一报下，不匹配maven项目标准测试目录。修改设置，查询junit Generator
+   2.outpath设置为${SOURCEPATH}/../../test/java/${PACKAGE}/${FILENAME}【default template选junit4】
+   
+   3.点击Properties最右侧的Junit4，修改模板。将@since <pre>$date</pre> 改为@since <pre>$today</pre>。 这样就不会出现日期乱码。
+   
+   package test.$entry.packageName;  改为 package  $entry.packageName;   符合maven的对应目录。
+   4.自动生成测试代码的快捷键：在待编写测试的java类源码块上按快捷键：alt+insert 或ctrl+shift+T
+   ```
+
+   使用：
+   ![image-20200224105525177](picture/image-20200224105525177.png)
+
+
+   ![image-20200224105556752](picture/image-20200224105556752.png)
+
+### 4. JSON转领域对象工具：GsonFormat
+
+![image-20200224110739454](picture/image-20200224110739454.png)
+
+![image-20200224110817486](picture/image-20200224110817486.png)
+
+![image-20200224110911951](picture/image-20200224110911951.png)
+
+![image-20200224111037816](picture/image-20200224111037816.png)
+
+![image-20200224111056675](picture/image-20200224111056675.png)
+
+---
+
+### 5.领域对象转JSON工具：POJO to JSON
+
+找到实体类，然后右击选中POJO To Json,然后找个地方粘贴就可以用了。
+
+![image-20200224111626575](picture/image-20200224111626575.png)
+
+```java
+{
+  "id": 0,
+  "name": "",
+  "gender": 0,
+  "age": 0,
+  "telephone": "",
+  "registerMode": "",
+  "thirdPartyId": ""
+}
+```
+
+### 6.序列化版本ID生成器：GenerateSerialVersionUID
+
+类实现Serializable接口，一般都要序列化版本ID
+
+![image-20200224112128341](picture/image-20200224112128341.png)
+
+![image-20200224112149324](picture/image-20200224112149324.png)
+
+### 7.驼峰转换：CamelCase
+
+使用快捷键shift+alt+u
+
+![image-20200224112422424](picture/image-20200224112422424.png)
+
+![image-20200224112439768](picture/image-20200224112439768.png)
+
+![image-20200224112456082](picture/image-20200224112456082.png)
+
+---
+
+### 8.生成对象set方法：GenerateAllSetter
+
+![image-20200224112750998](picture/image-20200224112750998.png)
+
+![image-20200224112809444](picture/image-20200224112809444.png)
+
+![image-20200224112845043](picture/image-20200224112845043.png)
+
+
+
 ---
 
 # 第11章 告别996之检查工具
